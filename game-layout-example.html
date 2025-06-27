@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>웹사이트 레이아웃</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Level 1: 최상위 컨테이너 - Primary (파란색) -->
+    <div class="container-fluid vh-100 border border-2 border-primary">
+        <!-- Level 2: Row - Success (초록색) -->
+        <div class="row h-100 border border-2 border-success">
+            <!-- Level 3: Sidebar - Warning (노란색) -->
+            <div id="sidebar" class="col-md-3 col-lg-2 h-100 bg-light border border-2 border-warning">
+                <!-- Level 4: Sidebar 내부 컨테이너 - Danger (빨간색) -->
+                <div class="sidebar-item  d-flex flex-column border border-2 border-info h-50">
+                    <div class="history-list-item border border-2 border-secondary p-1">
+                        사이드바 아이템 1 타이틀
+                    </div>
+                    <div class="overflow-auto">
+                        <div>
+                            사이드바 아이템 1 내용
+                        </div>
+                        <div>
+                            사이드바 아이템 1 내용
+                        </div>
+                        <div>
+                            사이드바 아이템 1 내용
+                        </div>
+                        <div>
+                            사이드바 아이템 1 내용
+                        </div>
+                        <div>
+                            사이드바 아이템 1 내용
+                        </div>
+                        <div>
+                            사이드바 아이템 1 내용
+                        </div>
+                        <div>
+                            사이드바 아이템 1 내용
+                        </div>
+                        <div>
+                            사이드바 아이템 1 내용
+                        </div>
+
+                        <div>
+                            사이드바 아이템 1 내용
+                        </div>
+                        <div>
+                            사이드바 아이템 1 내용
+                        </div>
+                        <div>
+                            사이드바 아이템 1 내용
+                        </div>
+
+                        <div>
+                            사이드바 아이템 1 내용
+                        </div>
+                        <div>
+                            사이드바 아이템 1 내용
+                        </div>
+                        <div>
+                            사이드바 아이템 1 내용
+                        </div>
+                        <div>
+                            사이드바 아이템 1 내용
+                        </div>
+                        <div>
+                            사이드바 아이템 1 내용
+                        </div>
+
+                        <div>
+                            사이드바 아이템 1 내용
+                        </div>
+                        <div>
+                            사이드바 아이템 1 내용
+                        </div>
+                        <div>
+                            사이드바 아이템 1 내용
+                        </div>
+
+                        <div>
+                            사이드바 아이템 1 내용
+                        </div>
+
+                        <div>
+                            사이드바 아이템 1 내용
+                        </div>
+
+                        <div>
+                            사이드바 아이템 1 내용
+                        </div>
+
+                        <div>
+                            사이드바 아이템 1 내용
+                        </div>
+
+                        <div>
+                            사이드바 아이템 1 내용
+                        </div>
+
+                        <div>
+                            사이드바 아이템 1 내용
+                        </div>
+
+                        <div>
+                            사이드바 아이템 1 내용
+                        </div>
+
+                        <div>
+                            사이드바 아이템 1 내용
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-item border border-2 border-info flex-column d-flex h-50">
+                    <div class="history-list-item border border-2 border-secondary p-1">
+                        사이드바 아이템 2 타이틀
+                    </div>
+                    <div class="char-img overflow-y-hidden align-items-center">
+                        <img class="img-fluid object-fit-contain w-100 h-100" src="bweepgenph0vx7ar5tt4.png">
+                    </div>
+                    <!-- <div class="d-flex justify-content-center align-items-center overflow-hidden h-100">
+                        <img src="bweepgenph0vx7ar5tt4.png" class="img-fluid h-100 object-fit-contain"/>
+                      </div> -->
+                    <div class="card-footer mt-auto w-100">
+                        <div class="bar border-danger border-1 border d-flex gap-4">
+                            <div class="border border-1 p-4 flex-fill btn btn-outline-primary">
+                                소유 아이템
+                            </div>
+                            <div class="border border-1 p-4 flex-fill btn btn-outline-primary">
+                                캐릭터 정보
+                            </div>
+                            <div class="border border-1 p-4 flex-fill btn btn-outline-primary">
+                                캐릭터 특성
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Level 3: Main Content - Warning (노란색) -->
+            <div id="main-content" class="col-md-9 col-lg-10 d-flex flex-column h-100 border border-2 border-warning">
+                <!-- Level 4: Main Content 내부 컨테이너 - Danger (빨간색) -->
+                <div class="d-flex flex-column h-100 border border-2 border-danger">
+                    <!-- Level 5: History 영역 - Info (하늘색) -->
+                    <div id="history" class="main-content-item flex-grow-1 overflow-auto border border-2 border-info">
+                        <!-- Level 6: History 스크롤 컨테이너 - Dark (검은색) -->
+                        <div class="overflow-auto h-100 border border-2 border-dark">
+                            <!-- Level 7: History 아이템들 - Secondary (회색) -->
+                            <div class="history-list-item p-3 border border-2 border-secondary">히스토리 아이템 1</div>
+                            <div class="history-list-item p-3 border border-2 border-secondary">히스토리 아이템 2</div>
+                            <div class="history-list-item p-3 border border-2 border-secondary">히스토리 아이템 3</div>
+                            <div class="history-list-item p-3 border border-2 border-secondary">히스토리 아이템 1</div>
+                            <div class="history-list-item p-3 border border-2 border-secondary">히스토리 아이템 2</div>
+                            <div class="history-list-item p-3 border border-2 border-secondary">히스토리 아이템 3</div>
+                            <div class="history-list-item p-3 border border-2 border-secondary">히스토리 아이템 1</div>
+                            <div class="history-list-item p-3 border border-2 border-secondary">히스토리 아이템 2</div>
+                            <div class="history-list-item p-3 border border-2 border-secondary">히스토리 아이템 3</div>
+                            <div class="history-list-item p-3 border border-2 border-secondary">히스토리 아이템 1</div>
+                            <div class="history-list-item p-3 border border-2 border-secondary">히스토리 아이템 2</div>
+                            <div class="history-list-item p-3 border border-2 border-secondary">히스토리 아이템 3</div>
+                            <div class="history-list-item p-3 border border-2 border-secondary">히스토리 아이템 1</div>
+                            <div class="history-list-item p-3 border border-2 border-secondary">히스토리 아이템 2</div>
+                            <div class="history-list-item p-3 border border-2 border-secondary">히스토리 아이템 3</div>
+                            <div class="history-list-item p-3 border border-2 border-secondary">히스토리 아이템 1</div>
+                            <div class="history-list-item p-3 border border-2 border-secondary">히스토리 아이템 2</div>
+                            <div class="history-list-item p-3 border border-2 border-secondary">히스토리 아이템 3</div>
+                            <div class="history-list-item p-3 border border-2 border-secondary">히스토리 아이템 1</div>
+                            <div class="history-list-item p-3 border border-2 border-secondary">히스토리 아이템 2</div>
+                            <div class="history-list-item p-3 border border-2 border-secondary">히스토리 아이템 3</div>
+                            <div class="history-list-item p-3 border border-2 border-secondary">히스토리 아이템 1</div>
+                            <div class="history-list-item p-3 border border-2 border-secondary">히스토리 아이템 2</div>
+                            <div class="history-list-item p-3 border border-2 border-secondary">히스토리 아이템 3</div>
+                            <div class="history-list-item p-3 border border-2 border-secondary">히스토리 아이템 1</div>
+                            <div class="history-list-item p-3 border border-2 border-secondary">히스토리 아이템 2</div>
+                            <div class="history-list-item p-3 border border-2 border-secondary">히스토리 아이템 3</div>
+
+                        </div>
+                    </div>
+
+                    <!-- Level 5: Control Area - Info (하늘색) -->
+                    <div class="main-content-item border border-2 border-info" id="control-area">
+                        <!-- Level 6: Control Area 내부 컨테이너 - Dark (검은색) -->
+                        <div class="d-flex flex-column border border-2 border-dark">
+                            <!-- Level 7: Control List - Secondary (회색) -->
+                            <div class="control-list p-3 border border-2 border-secondary">
+                                <!-- Level 8: Button Row - Light (연한 회색) -->
+                                <div class="row g-2 border border-2 border-light">
+                                    <!-- Level 9: Button Columns - Primary (파란색) -->
+                                    <div class="col-auto border border-2 border-primary">
+                                        <!-- Level 10: Button Elements - Success (초록색) -->
+                                        <div
+                                            class="control-list-item btn btn-outline-primary border border-2 border-success">
+                                            버튼 1
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-secondary border border-2 border-success">
+                                            버튼 2
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-success border border-2 border-success">
+                                            버튼 3
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-success border border-2 border-success">
+                                            버튼 3
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <!-- Level 10: Button Elements - Success (초록색) -->
+                                        <div
+                                            class="control-list-item btn btn-outline-primary border border-2 border-success">
+                                            버튼 1
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-secondary border border-2 border-success">
+                                            버튼 2
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-success border border-2 border-success">
+                                            버튼 3
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-success border border-2 border-success">
+                                            버튼 3
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <!-- Level 10: Button Elements - Success (초록색) -->
+                                        <div
+                                            class="control-list-item btn btn-outline-primary border border-2 border-success">
+                                            버튼 1
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-secondary border border-2 border-success">
+                                            버튼 2
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-success border border-2 border-success">
+                                            버튼 3
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-success border border-2 border-success">
+                                            버튼 3
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <!-- Level 10: Button Elements - Success (초록색) -->
+                                        <div
+                                            class="control-list-item btn btn-outline-primary border border-2 border-success">
+                                            버튼 1
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-secondary border border-2 border-success">
+                                            버튼 2
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-success border border-2 border-success">
+                                            버튼 3
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-success border border-2 border-success">
+                                            버튼 3
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <!-- Level 10: Button Elements - Success (초록색) -->
+                                        <div
+                                            class="control-list-item btn btn-outline-primary border border-2 border-success">
+                                            버튼 1
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-secondary border border-2 border-success">
+                                            버튼 2
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-success border border-2 border-success">
+                                            버튼 3
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-success border border-2 border-success">
+                                            버튼 3
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <!-- Level 10: Button Elements - Success (초록색) -->
+                                        <div
+                                            class="control-list-item btn btn-outline-primary border border-2 border-success">
+                                            버튼 1
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-secondary border border-2 border-success">
+                                            버튼 2
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-success border border-2 border-success">
+                                            버튼 3
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-success border border-2 border-success">
+                                            버튼 3
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <!-- Level 10: Button Elements - Success (초록색) -->
+                                        <div
+                                            class="control-list-item btn btn-outline-primary border border-2 border-success">
+                                            버튼 1
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-secondary border border-2 border-success">
+                                            버튼 2
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-success border border-2 border-success">
+                                            버튼 3
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-success border border-2 border-success">
+                                            버튼 3
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <!-- Level 10: Button Elements - Success (초록색) -->
+                                        <div
+                                            class="control-list-item btn btn-outline-primary border border-2 border-success">
+                                            버튼 1
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-secondary border border-2 border-success">
+                                            버튼 2
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-success border border-2 border-success">
+                                            버튼 3
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-success border border-2 border-success">
+                                            버튼 3
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <!-- Level 10: Button Elements - Success (초록색) -->
+                                        <div
+                                            class="control-list-item btn btn-outline-primary border border-2 border-success">
+                                            버튼 1
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-secondary border border-2 border-success">
+                                            버튼 2
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-success border border-2 border-success">
+                                            버튼 3
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-success border border-2 border-success">
+                                            버튼 3
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <!-- Level 10: Button Elements - Success (초록색) -->
+                                        <div
+                                            class="control-list-item btn btn-outline-primary border border-2 border-success">
+                                            버튼 1
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-secondary border border-2 border-success">
+                                            버튼 2
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-success border border-2 border-success">
+                                            버튼 3
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-success border border-2 border-success">
+                                            버튼 3
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <!-- Level 10: Button Elements - Success (초록색) -->
+                                        <div
+                                            class="control-list-item btn btn-outline-primary border border-2 border-success">
+                                            버튼 1
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-secondary border border-2 border-success">
+                                            버튼 2
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-success border border-2 border-success">
+                                            버튼 3
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-success border border-2 border-success">
+                                            버튼 3
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <!-- Level 10: Button Elements - Success (초록색) -->
+                                        <div
+                                            class="control-list-item btn btn-outline-primary border border-2 border-success">
+                                            버튼 1
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-secondary border border-2 border-success">
+                                            버튼 2
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-success border border-2 border-success">
+                                            버튼 3
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-success border border-2 border-success">
+                                            버튼 3
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <!-- Level 10: Button Elements - Success (초록색) -->
+                                        <div
+                                            class="control-list-item btn btn-outline-primary border border-2 border-success">
+                                            버튼 1
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-secondary border border-2 border-success">
+                                            버튼 2
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-success border border-2 border-success">
+                                            버튼 3
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-success border border-2 border-success">
+                                            버튼 3
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <!-- Level 10: Button Elements - Success (초록색) -->
+                                        <div
+                                            class="control-list-item btn btn-outline-primary border border-2 border-success">
+                                            버튼 1
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-secondary border border-2 border-success">
+                                            버튼 2
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-success border border-2 border-success">
+                                            버튼 3
+                                        </div>
+                                    </div>
+                                    <div class="col-auto border border-2 border-primary">
+                                        <div
+                                            class="control-list-item btn btn-outline-success border border-2 border-success">
+                                            버튼 3
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Level 5: Text Input - Info (하늘색) -->
+                    <div id="control-text-input" class="p-3 border border-2 border-info mt-auto">
+                        <!-- Level 6: Input Group - Dark (검은색) -->
+                        <div class="input-group border border-2 border-dark">
+                            <!-- Level 7: Input 요소들 - Secondary (회색) -->
+                            <input type="text" class="form-control border border-2 border-secondary"
+                                placeholder="메시지를 입력하세요...">
+                            <button class="btn btn-primary border border-2 border-secondary" type="button">전송</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
