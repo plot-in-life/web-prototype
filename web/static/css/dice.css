@@ -1,0 +1,43 @@
+/* dice.css */
+@keyframes roll-animation {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  15% {
+    transform: translate(-20px, -50px) rotate(-30deg);
+  }
+  30% {
+    transform: translate(30px, -80px) rotate(60deg);
+  }
+  45% {
+    transform: translate(-40px, -50px) rotate(-180deg);
+  }
+  60% {
+    transform: translate(10px, -30px) rotate(360deg);
+  }
+  75% {
+    transform: translate(-20px, -10px) rotate(540deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(720deg);
+  }
+}
+
+.dice-rolling {
+  animation: roll-animation 1.5s ease-out;
+  color: #0d6efd;
+}
+
+#dice-result-display {
+  font-size: 6rem;
+  font-weight: bold;
+  color: #212529;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+#dice-result-display.visible {
+  opacity: 1;
+  transform: scale(1);
+}
