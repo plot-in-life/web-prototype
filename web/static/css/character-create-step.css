@@ -1,0 +1,22 @@
+/* 최소한의 커스텀: 진행중 스텝 강조 */
+.step.active {
+    background-color: #e7f1ff;
+    border-radius: 0.5rem;
+}
+.step.active .step-number {
+    background-color: #0d6efd !important;
+}
+.progress.flex-column {
+    flex-direction: column;
+}
+
+/* style.css */
+.progress-bar.bg-primary {
+    position: absolute;
+    top: 0;        /* 위에서 아래로 */
+    left: 0;
+    width: 100%;
+    height: 0%;
+    transition: height 0.5s;
+}
+
